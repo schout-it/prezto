@@ -32,24 +32,29 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt'
+  'prompt' \
+  'git' \
+  'python' \
+  'ssh' \
+  'tmux' \
+  'history-substring-search'
 
 #
 # Autosuggestions
 #
 
 # Set the query found color.
-# zstyle ':prezto:module:autosuggestions:color' found ''
+zstyle ':prezto:module:autosuggestions:color' found ''
 
 #
 # Editor
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Auto convert .... to ../..
-# zstyle ':prezto:module:editor' dot-expansion 'yes'
+zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 # Allow the zsh prompt context to be shown.
 #zstyle ':prezto:module:editor' ps-context 'yes'
@@ -160,26 +165,26 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
-# zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
+zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
 
 # Set the tab title format.
-# zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
+zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
 
 # Set the terminal multiplexer title format.
-# zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
+zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
 
 #
 # Tmux
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-# zstyle ':prezto:module:tmux:auto-start' local 'yes'
+zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
-# zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Integrate with iTerm2.
 # zstyle ':prezto:module:tmux:iterm' integrate 'yes'

@@ -5,9 +5,18 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# Extra completions
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/completion" ]]; then
+  fpath=(${ZDOTDIR:-$HOME}/.zprezto/completion $fpath)
+  autoload -Uz compinit && compinit -i
+fi
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
 # Customize to your needs...
+
+export NVM_DIR="/home/rod/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
